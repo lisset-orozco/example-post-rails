@@ -1,0 +1,15 @@
+<h1><%= t('users.add')%></h1>
+<p>Find me in app/views/users/add.html.erb</p>
+<p>We need the data</p>
+
+<%= form_tag users_create_path do %>
+  <%= label_tag 'name', t('users.name') %>
+  <%= text_field_tag 'name' %>
+  <%= label_tag 'lastname', t('users.lastname') %>
+  <%= text_field_tag 'lastname' %>
+  <%= label_tag 'age', t('users.age') %>
+  <%= text_field_tag 'age' %>
+  <%= submit_tag "Send" || t('users.send') %>
+<% end -%>
+
+<%= link_to 'Post', posts_path %>
