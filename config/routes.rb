@@ -15,7 +15,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'posts#index'
+  # root 'posts#index'
+  root :to =>'posts#index'
 
   # get 'actions' => 'posts#action'
   get '/post/action/:task' => 'posts#action'
