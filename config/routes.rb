@@ -1,19 +1,12 @@
 Rails.application.routes.draw do
   get 'users/add'
-  
   post 'users/create'
-
   get 'users/show'
 
   # get 'users/create'
-
   # get 'users/edit'
-
   # get 'users/update'
-
   # get 'users/destroy'
-
-  # 
 
   resources :posts
 
